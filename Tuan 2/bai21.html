@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        .header{
+            height: 100px;
+            width: 100%;
+            background-color: white;
+        }
+        .header-text{
+            text-align: center;
+        }
+        .header1{
+            margin-bottom: 16px;
+            font-size: 40px;
+        }
+        .header2{ 
+                font-size: 17px;
+        }
+        .nav{
+            height: 50px;
+            width: 100%;
+            background-color: rgb(75, 75, 75);
+        }
+        .nav-list{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            padding: 0;
+        }
+        .nav-item{
+            color: white;
+            margin: 0 25px;
+            padding: 15px 0;
+        }
+        .content{
+            height: 300px;
+            width: 100%;
+            background-color: rgba(2, 0, 2, 0.301);
+            clear: both;
+        }
+        .content-aside{
+            height: 188%;
+            width: 30%;
+            background-color: rgb(201, 201, 201);
+            float: left;
+        }
+        #section1{
+            height: 100%;
+            width: 70%;
+            background-color: #ffffff;
+            float: left;
+        }
+        .section-title{
+            font-size: 30px;
+            margin-left: 20px;
+        }
+        .section-text{
+            margin-top: 20px;
+        }
+        .section-ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            padding: 0;
+        }
+        .section-li{
+            color: green;
+            margin-left: 20px;
+        }
+        .section-li1{
+            color: green;
+            margin-right: 10px;
+        }
+        .image{
+            width: 160px;
+            height: 140px;
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-left: 20px;
+        }
+       
+        .text-p-html{
+            margin-top: 30px;
+            line-height: 0.2;
+        }
+        hr{
+            margin-top: 90px;
+            margin-left: 20px;
+        }
+         .-text{
+             margin-top: 10px;
+         }
+         .-text1{
+            font-size: 30px;
+            margin: 10px;
+         }
+         .-text2{
+            margin: 10px;
+         }
+    </style>
+</head>
+<body>
+    <div class="wrapper" >
+        <header class="header">
+            <div class="header-text">
+                <h1 class="header1">W3School.com</h1>
+                <p class="header2">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+            </div>
+        </header>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">HTML</li>
+               <li class="nav-item">CSS</li>
+               <li class="nav-item">JAVASCRIPT</li>
+               <li class="nav-item">TUTORIALS</li>
+               <li class="nav-item">REFERENCES</li>
+               <li class="nav-item">EXAMPLES</li>
+               <li class="nav-item">LANGUAGE</li>
+               <li class="nav-item">SEARCH</li>
+            </ul>   
+        </nav>
+        <div class="content">
+            <aside class="content-aside">
+                <div class="content-text">
+                    <p>HTML Tutorials</p>
+                </div>
+                <ul class="conten-list">
+                    <li class="content-item">1</li>
+                    <li class="content-item">2</li>
+                    <li class="content-item">3</li>
+                    <li class="content-item">4</li>
+                    <li class="content-item">5</li>
+                    <li class="content-item">6</li>
+                    <li class="content-item">7</li>
+                    <li class="content-item">8</li>
+                    <li class="content-item">9</li>
+                    <li class="content-item">10</li>
+                </ul>
+            </aside>
+            <section id="section1">
+                <div class="section-p">
+                    <p class="section-title">HTML(5) Tutorial</p>
+                </div>
+                <div class="section-text">
+                    <ul class="section-ul">
+                        <li class="section-li"> << W3School Home</li>
+                        <li class="section-li1"> Next chapter>> </li>
+                    </ul>
+                    <div>
+                        <img class="image" src="./html5.png" alt="html5" align="left">
+                    </div>
+                    <p class="text-p-html">With HTML you can create your own Web site. <p class="text-p-html" align="left">This tutorial teaches you everything about HTML. <p class="text-p-html" align="left">HTML is a easy to learn - You will enjoy it. </p></p></p>
+                </div>
+                <div><hr></div>
+                <div class="-text">
+                    <p class="-text1">Examples in Every Chapter</p>
+                    <p class="-text2">This HTML tutorial contains hundreds of HTML examples.</p>
+                </div>
+            </section>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        .wrapper{
+            background-color: antiquewhite;
+        }
+        .header{
+            height: 150px;
+            width: 100%;
+            background-color: rgb(238, 238, 238);
+        }
+        .image-header{
+            max-width: 250px;
+            max-height: 150px;
+        }
+        .text-title{
+            margin: 0px 0px 0px 148.15px;
+            padding: 20px 30px 30px 30px;
+            font-style: italic;
+            font-size: 1.2em;
+        }
+        .ul-item{
+            display: flex;
+            list-style: none;
+        }
+        .li-item{    
+            padding-top: 50px;
+            margin: 10px 10px 12px;
+        }
+        .header-a{
+            color: #0C3D5F;
+            text-decoration: none;
+        }
+        .search-item{
+            padding-top: 50px;
+            margin-right: 10px;
+        }
+        nav{
+            height: 50px;
+            width: 100%;
+            background-color: bisque;
+        }
+        .content{
+            height: 400px;
+            width: 100%;
+            background-color: rgba(179, 57, 184, 0.301);
+            clear: both;
+        }
+        aside{
+            height: 100%;
+            width: 30%;
+            background-color: rgb(136, 134, 204);
+            float: left;
+        }
+        #section1{
+            height: 100%;
+            width: 35%;
+            background-color: #ff9393;
+            float: left;
+        }
+        #section2{
+            height: 100%;
+            width: 35%;
+            background-color: #e01414;
+            float: right;
+        }
+        footer{
+            height: 150%;
+            width: 100%;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper" >
+        <div class="header">
+            <div class="image" ><img class="image-header" src="./w3c-blue-logo-svg-vector.svg" alt="d" align="left"></h1></div>
+            <div class="text-header"> <p class="text-title">Leading the web to its full potential</p></div>
+            <div class="header-ul">
+                <ul class="ul-item">
+                    <li class="li-item">
+                        <a class="header-a item-a" href="">STANDARDS</a>
+                    </li>
+                    <li class="li-item ">
+                        <a class="header-a item-b" href="">PARTICIPATE</a>
+                    </li>
+                    <li class="li-item">
+                        <a class="header-a item-c" href="">MENBERSHIP</a>
+                    </li>
+                    <li class="li-item">
+                        <a class="header-a item-d" href="">ABOUT W3C</a>
+                    </li>
+                    <li class="search-item">
+                        <div id="search-from">
+                            <input tabindex="3" class="text" name="q" value title ="Search">
+                            <button id="search-submit" name="search-submit" type="submit">
+                                <img class="submit" src="./349-3498016_search-button-icon-transparent-circle.png" alt="Search" width="21" height="17">
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav></nav>
+        <div class="content">
+            <aside>
+            </aside>
+            <section id="section1">
+            </section>
+            <section id="section2">
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+</html>
