@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0 auto;
+      padding: 0;
+    }
+    .wrapper {
+      width: 1098px;
+      height: auto;
+    }
+    nav {
+      height: 50px;
+      width: 100%;
+      background-color: lightgreen;
+      line-height: 50px;
+    }
+    header {
+      height: 150px;
+      width: 100%;
+      background-image: url('./code-la-gi-2.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .container {
+      height: 400px;
+      width: 100%;
+    }
+    .menu-left {
+      width: 30%;
+      height: 100%;
+      background-color: lightcoral;
+      float: left;
+    }
+    .content {
+      width: 70%;
+      height: 100%;
+      background-color: lightgrey;
+      float: left;
+    }
+    footer {
+      height: 130px;
+      width: 100%;
+      background-color: lavender;
+    }
+
+    .menu li {
+      height: 100%;
+      width: 130px;
+      background-color: antiquewhite;
+      float: left;
+      line-height: 50px;
+      text-indent: 20px;
+      list-style: none;
+      position: relative;
+    }
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: blue;
+    }
+    
+    .menu li:hover {
+      background-color: white;
+    }
+
+    li:hover>a {
+      color: black;
+    }
+
+    .submenu {
+      position: absolute;
+      display: none;
+    }
+
+    .menu li:hover .submenu {
+      display: block;
+    }
+    span label {
+      margin-left: 20px;
+    }
+     #email {
+       padding: 3px;
+       border-radius: 4px;
+       margin-left: 8px;
+     }
+
+     #submit {
+       padding: 3px;
+       background-color: lightgoldenrodyellow;
+       border-radius: 10px;
+     }
+
+     header h1 {
+       color: lightcyan;
+       text-align: center;
+       text-shadow: 10px 20px 20px red;
+     }
+
+     article img {
+       width: 100%;
+       height: 100%;
+     }
+
+     article img {
+       height: 100px;
+     }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <nav>
+      <ul class="menu">
+        <li><a href="">HOME</a></li>
+        <li><a href="">SERVICE</a></li>
+        <li><a href="">CONTACT</a>
+          <ul class="submenu">
+            <li><a href="">PHONE</a></li>
+            <li><a href="">TIVI</a></li>
+            <li><a href="">INTERNET</a></li>
+          </ul>
+        </li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">HELP</a></li>
+      </ul>
+      <span>
+        <form action="">
+          <label for="Email">Email</label>
+          <input type="email" name="email" id="email" required placeholder="Email">
+          <input type="submit" value="Submit" id="submit">
+        </form>
+      </span>
+    </nav>
+    <header>
+      <h1>DEVELOPER</h1>
+    </header>
+    <div class="container">
+      <aside class="menu-left">
+        <article>
+          <h3>CODE</h3>
+          <img src="./CODE-1.jpg" alt="">
+        </article>
+        <article>
+          <h3>CODER</h3>
+          <img src="./programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-digital-binary-data-and-streaming-digital-code-vector.jpg" alt="">
+        </article>
+        <article>
+          <h3>DEV</h3>
+          <img src="./images.png" alt="">
+        </article>
+      </aside>
+      <section class="content">
+        <h2>DANG KI</h2>
+        <form action="">
+          <fieldset>
+            <legend>Thong tin</legend>
+            <label for="hoten">Ho ten: </label>
+            <input type="text" name="hoten" id="hoten" required placeholder="Nhap ho va ten">
+            <br> <br>
+            <label for="gioitinh">Gioi tinh</label>
+            <input type="radio" name="nam" id="nam" value="nam">
+            <label>Nam</label>
+            <input type="radio" name="nam" id="nu" value="nu">
+            <label>Nu</label>
+            <br> <br> 
+            <label for="ngaysinh">Ngay Sinh</label>
+            <input type="date" name="ngaysinh" id="ngaysinh" required placeholder="Ngay sinh" minlength="20" pattern="dd/MM/yyyy">
+            <br> <br>
+            <input type="submit">
+          </fieldset>
+        </form>
+      </section>
+    </div>
+    <footer></footer>
+  </div>
+</body>
+</html>
