@@ -44,13 +44,13 @@ body {
 .header-item a {
   text-decoration: none;
   color: black;
-  padding: 22.5px 12px;
+  padding: 18px 12px;
   font-size: 14.5px;
 }
 
 .header-item a:hover {
   color: #fff;
-  background-color: #000;
+  border-bottom: 10px solid #fff;
 }
 
 .header-search {
@@ -70,6 +70,7 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  background-color: white;
 }
 
 .btn-search:hover {
