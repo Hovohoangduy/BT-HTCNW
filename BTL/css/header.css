@@ -50,7 +50,7 @@ body {
 
 .header-item a:hover {
   color: #fff;
-  border-bottom: 10px solid #fff;
+  border-bottom: 3.5px solid #fff;
 }
 
 .header-search {
