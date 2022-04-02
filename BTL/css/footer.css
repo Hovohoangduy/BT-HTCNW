@@ -1,9 +1,14 @@
 .footer {
-  background-color: #ccc;
+  background-color: #EEDD82;
   padding: 16px 40px;
 }
 
 .footer p {
   margin: 4px 0;
   font-size: 12px;
+}
+
+.footer p:first-child {
+  font-size: 14px;
+  font-weight: bold;
 }
