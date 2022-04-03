@@ -1,6 +1,6 @@
 .login-container {
   width: 350px;
-  height: 430px;
+  height: 470px;
   position: relative;
   margin: 0 auto;
   margin-top: 20px;
@@ -91,5 +91,10 @@
 
 .login p a {
   text-decoration: none;
+  color: #FF3030;
+}
+
+form span {
+  width: 310px;
   color: #FF3030;
 }

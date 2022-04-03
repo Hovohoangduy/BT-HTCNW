@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đăng nhập</title>
+  <title>Sản Phẩm</title>
   <link rel="shortcut icon" href="../img/logo-img.png">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/sp.css">
   <link rel="stylesheet" href="../css/sub-footer.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
@@ -31,9 +31,9 @@
       <button class="btn-search" type="submit">Tìm kiếm</button>
     </form>
     <div class="header-user">
-      <a href="../html/signup.html" class="login-user">
+      <a href="../html/login.html" class="login-user">
         <i class="fa-solid fa-user logo-user"></i>
-        <p>Đăng ký</p>
+        <p>Đăng nhập</p>
       </a>
       <a href="../html/gh.html" class="cart-user">
         <i class="fa-solid fa-cart-shopping logo-cart"></i>
@@ -80,25 +80,38 @@
       </li>
     </ul>
   </div>
-  <div class="login-container">
-    <form action="" class="login">
-      <div class="login-text">
-        <h3>ĐĂNG NHẬP</h3>
+  <div class="content-sp">
+    <h2>MÁY ẢNH CANON EOS M6 MARK II BODY/ ĐEN</h2>
+    <div class="sp-container">
+      <img src="../img/camera1.png" alt="sp img" class="sp-img">
+      <div class="sp">
+        <div class="sp-text">
+          <h3>TÍNH NĂNG</h3>
+          <p>- Cảm biến: APS-C CMOS 32.5MP<br>
+            - Bộ xử lý hình ảnh: Digic 8<br>
+            - Chụp liên tiếp: 14fps <br>
+            - Tốc độ màn trập: 1/16000<br>
+            - Dải ISO: 100-40000 mở rộng 51200<br>
+            - Dual Pixel CMOS AF với 5481 điểm AF<br>
+            - Chụp liên tiếp 30 khung hình/giây với chế độ chụp RAW<br>
+            - Quay Video 4K (Uncropped/Cropped)<br>
+            - Màn hình LCD: 3.0 inch<br>
+            - Tích hợp Wifi và Bluetooth<br>
+            - Pin tương thích: LP-E17<br>
+            - Tích hợp cổng Microphone Input 3.5mm<br>
+            - Kích thước: 119.6 x 70 x 49.2 mm<br>
+            - Trọng lượng: 408g<br>
+            - Phụ kiện đi kèm: Sạc pin, Pin, Nắp máy ảnh, Dây đeo, Thẻ bảo hành, Hướng dẫn sử dụng<br>
+            - Thương hiệu: cannon<br>
+            - Bảo hành: 24 tháng<br>
+          </p>
+        </div>
+        <div class="btn-sp-container">
+          <button class="btn-sp">MUA HÀNG</button>
+          <button class="btn-sp">THÊM VẢO GIỎ HÀNG</button>
+        </div>
       </div>
-      <label for="txtUser">Tài Khoản</label> <br>
-      <input type="text" id="txtUser" placeholder="Tên Đăng Nhập" required onBlur="return checkUser()"><br>
-      <span id="tendn"></span><br>
-      <label for="txtPassword">Mật Khẩu</label><br>
-      <input type="password" id="txtPassword" placeholder="Mật Khẩu" required onBlur="return checkPassword()"><br>
-      <span id="mk"></span><br>
-      <button class="btn-login" type="submit">Đăng Nhập</button>
-      <div class="login-internet-text">Hoặc đăng nhập với</div>
-      <div class="login-internet">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
-        <a href="#"><i class="fa-brands fa-google"></i>Google</a>
-      </div>
-      <p>Nếu bạn chưa có tài khoản? <a href="../html/signup.html">Đăng ký</a></p>
-    </form>
+    </div>
   </div>
   <div class="sub-footer">
     <div class="sub-footer container">
@@ -141,6 +154,5 @@
     <p><span>Địa chỉ: Thành phố Hồ Chí Minh</span></p>
     <p><span>Điện thoại: 079202012270</span></p>
   </div>
-  <script src="../js/script.js"></script>
 </body>
 </html>

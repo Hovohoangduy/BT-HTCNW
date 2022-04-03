@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đăng nhập</title>
+  <title>Liên hệ</title>
   <link rel="shortcut icon" href="../img/logo-img.png">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/header.css">
   <link rel="stylesheet" href="../css/nav.css">
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/lh.css">
   <link rel="stylesheet" href="../css/sub-footer.css">
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
@@ -22,18 +22,18 @@
     </a>
     <ul class="header-items">
       <li class="header-item"><a href="../index.html">TRANG CHỦ</a></li>
-      <li class="header-item"><a href="../html/gtt.html">GIỚI THIỆU</a></li>
+      <li class="header-item"><a href="../html/gt.html">GIỚI THIỆU</a></li>
       <li class="header-item"><a href="../html/tt.html">BẢO HÀNH</a></li>
-      <li class="header-item"><a href="../html/lh.html">LIÊN HỆ</a></li>
+      <li class="header-item"><a href="#">LIÊN HỆ</a></li>
     </ul>
     <form action="" class="header-search">
       <input type="text" class="txtSearch" placeholder="Tìm kiếm" size="30">
       <button class="btn-search" type="submit">Tìm kiếm</button>
     </form>
     <div class="header-user">
-      <a href="../html/signup.html" class="login-user">
+      <a href="../html/login.html" class="login-user">
         <i class="fa-solid fa-user logo-user"></i>
-        <p>Đăng ký</p>
+        <p>Đăng nhập</p>
       </a>
       <a href="../html/gh.html" class="cart-user">
         <i class="fa-solid fa-cart-shopping logo-cart"></i>
@@ -78,27 +78,16 @@
           <li class="nav-child-item"><a href="../html/phukien.html">Thiết Bị Livestream</a></li>
         </ul>
       </li>
+      <li class="nav-item"><a href="#">Khuyến mãi</a></li>
     </ul>
   </div>
-  <div class="login-container">
-    <form action="" class="login">
-      <div class="login-text">
-        <h3>ĐĂNG NHẬP</h3>
-      </div>
-      <label for="txtUser">Tài Khoản</label> <br>
-      <input type="text" id="txtUser" placeholder="Tên Đăng Nhập" required onBlur="return checkUser()"><br>
-      <span id="tendn"></span><br>
-      <label for="txtPassword">Mật Khẩu</label><br>
-      <input type="password" id="txtPassword" placeholder="Mật Khẩu" required onBlur="return checkPassword()"><br>
-      <span id="mk"></span><br>
-      <button class="btn-login" type="submit">Đăng Nhập</button>
-      <div class="login-internet-text">Hoặc đăng nhập với</div>
-      <div class="login-internet">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
-        <a href="#"><i class="fa-brands fa-google"></i>Google</a>
-      </div>
-      <p>Nếu bạn chưa có tài khoản? <a href="../html/signup.html">Đăng ký</a></p>
-    </form>
+  <div class="content-lh">
+    <h3>MỌI THÔNG TIN CHI TIẾT XIN LIÊN HỆ</h3>
+    <p><i class="fa-solid fa-phone"></i>Hotline: 1800 1789<br></p>
+    <p><i class="fa-solid fa-envelope"></i>CameraStore@gmail.com<br></p>
+    <p><i class="fa-brands fa-facebook"></i>Facebook: https://www.facebook.com/CameraStore<br></p>
+    <p><i class="fa-brands fa-instagram-square"></i>Instagram: https://instagram.com/CameraStore<br></p>
+    <p><i class="fa-brands fa-linkedin"></i>https://linkedin.com/in/CameraStore<br></p>
   </div>
   <div class="sub-footer">
     <div class="sub-footer container">
@@ -141,6 +130,5 @@
     <p><span>Địa chỉ: Thành phố Hồ Chí Minh</span></p>
     <p><span>Điện thoại: 079202012270</span></p>
   </div>
-  <script src="../js/script.js"></script>
 </body>
 </html>
