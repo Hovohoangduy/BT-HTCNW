@@ -13,7 +13,11 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/login.css">
   <link rel="stylesheet" href="../css/signin.css">
+  <!-- <link rel="stylesheet" href="../bootstrap-3.1.1-dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="../icon/fontawesome-free-6.1.1-web/css/all.css">
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <!-- <script src="../bootstrap-3.1.1-dist/js/bootstrap.min.js"></script> -->
+  <script src="../js/script.js"></script>
 </head>
 <body>
   <div class="header">
@@ -86,19 +90,35 @@
       <div class="login-text">
         <h3>ĐĂNG KÝ</h3>
       </div>
-      <label for="txtUser">Tài Khoản</label> <br>
-      <input type="text" id="txtUser" placeholder="Tên Tài Khoản" required onBlur="return checkUser()"><br>
-      <span id="tendn"></span><br>
-      <label for="txtPassword">Mật Khẩu</label><br>
-      <input type="password" id="txtPassword" placeholder="Mật Khẩu" required onBlur="return checkPassword()"><br>
-      <span id="mk"></span><br>
-      <label for="txtXNPassword">Nhập Lại Mật Khẩu</label><br>
-      <input type="password" id="txtXNPassword" placeholder="Nhập Lại Mật Khẩu" required onBlur="return checkPasswordx()"><br>
-      <span id="nlmk"></span><br>
-      <label for="txtEmail">Email</label> <br>
-      <input type="email" id="txtEmail" placeholder="Nhập Địa Chỉ Email" required onBlur="return checkMail()"><br>
-      <span id="mail"></span><br>
-      <input class="btn-login" type="submit" value="ĐĂNG KÍ">
+      <div class="form-container">
+        <label for="txtUser">Tài Khoản</label> <br>
+        <input type="text" id="txtUser" placeholder="Tên Tài Khoản"><br>
+        <span id="tbUser"></span>
+      </div>
+      <div class="form-container">
+        <label for="txtPassword">Mật Khẩu</label><br>
+        <input type="password" id="txtPassword" placeholder="Mật Khẩu"><br>
+        <span id="tbMk"></span>
+      </div>
+      <div class="form-container">
+        <label for="txtXNPassword">Nhập Lại Mật Khẩu</label><br>
+        <input type="password" id="txtXNPassword" placeholder="Nhập Lại Mật Khẩu"><br>
+        <span id="tbXnmk"></span>
+      </div>
+      <div class="form-container">
+        <label for="txtEmail">Email</label> <br>
+        <input type="email" id="txtEmail" placeholder="Nhập Địa Chỉ Email"><br>
+        <span id="tbMail"></span>
+      </div>
+      <div class="form-container">
+        <label for="txtSDT">Số điện thoại</label> <br>
+        <input type="text" id="txtSDT" placeholder="Nhập số điện thoại"><br>
+        <span id="tbSDT"></span>
+      </div>
+      <div class="form-group">
+        <span id="thongbao"></span>
+      </div>
+      <button type="button" id="btn-login">Đăng ký</button>
       <div class="login-internet-text">Hoặc đăng nhập với</div>
       <div class="login-internet">
         <a href="#"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
@@ -107,6 +127,7 @@
       <p>Nếu bạn đã có tài khoản? <a href="../html/login.html">Đăng nhập</a></p>
     </form>
   </div>
+  <div id="info">Thông tin khách hàng</div>
   <div class="sub-footer">
     <div class="sub-footer container">
       <ul class="sub-footer-items">
@@ -148,7 +169,5 @@
     <p><span>Địa chỉ: Thành phố Hồ Chí Minh</span></p>
     <p><span>Điện thoại: 079202012270</span></p>
   </div>
-  <script src="../js/script.js"></script>
-  <script src="../js/jquery-3.6.0.min.js"></script>
 </body>
 </html>

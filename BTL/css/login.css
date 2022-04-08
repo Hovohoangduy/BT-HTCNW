@@ -34,9 +34,9 @@
   border-radius: 4px;
 }
 
-.btn-login {
+#btn-login {
   font-size: 15px;
-  margin-top: 8px;
+  margin-top: 16px;
   margin-bottom: 8px;
   width: 270px;
   padding: 10px;

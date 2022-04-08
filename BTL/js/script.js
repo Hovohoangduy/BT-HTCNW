@@ -1,60 +1,97 @@
-function checkUser() {
-  var mauKT = /^[a-zA-Z]\w*/;
-  if (mauKT.test(document.getElementById("txtUser").value.trim()) == true) {
-    tendn.innerHTML = "";
-    return true;
-  } else {
-    tendn.innerHTML = "Nhập sai, vui lòng nhập lại";
-    return false;
-  }
-}
-
-function checkPassword() {
-  var re = /(?=.*\d).{6,}/;
-  if (re.test(document.getElementById('txtPassword').value.trim()) == false) {
-    mk.innerText = "Phải có chữ, số, ít nhất 6 kí tự";
-    return false;
-  }
-  else {
-    mk.innerText = "";
+$(document).ready(function() {
+  // ChecckUser
+  function checkUser() {
+    var i = 1;
+    let mauKT = /^[a-zA-Z\-]+$/;
+    if ($('#txtUser').val() == "") {
+        $('#tbUser').html('Không để trống');
+        return false;
+    }
+    if (!mauKT.test($('#txtUser').val())) {
+        $('#tbUser').html('Không sử dụng số trong tên đăng nhập');
+        return true;
+    }
+    $('#tbUser').html('');
     return true;
   }
-}
+  $('#txtUser').blur(checkUser);
 
-function checkPasswordx() {
-  if (document.getElementById('txtXNPassword').value != document.getElementById('txtPassword').value) {
-    nlmk.innerText = "Nhập sai, khác mật khẩu";
-    return false;
-  }
-  else {
-    nlmk.innerText = "";
+  // checkpassword
+  function checkPassword() {
+    let mauKT = /(?=.*\d).{6,}/;
+    if ($('#txtPassword').val() == "") {
+        $('#tbMk').html('Không để trống');
+        return false;
+    }
+    if (!mauKT.test($('#txtPassword').val())) {
+        $('#tbMk').html('Phải có chữ, số có ít nhất 6 ký tự');
+        return true;
+    }
+    $('#tbMk').html('');
     return true;
   }
-}
+  $('#txtPassword').blur(checkPassword);
 
-function checkMail() {
-  var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  if (re.test(document.getElementById('txtEmail').value.trim()) == false) {
-    mail.innerText = "Nhập sai, vui lòng nhập lại theo mẫu you@example.com";
-    return false;
-  }
-  else {
-    mail.innerText = "";
+  //checkXNPassword
+  function checkXNPassword() {
+    let mauKT = /(?=.*\d).{6,}/;
+    if ($('#txtXNPassword').val() == "") {
+        $('#tbXnmk').html('Không để trống');
+        return false;
+    }
+    if ($('#txtXNPassword').val() != $('#txtPassword').val()) {
+        $('#tbXnmk').html('Phải giống với ô mật khẩu');
+        return true;
+    }
+    $('#tbXnmk').html('');
     return true;
   }
-}
+  $('#txtXNPassword').blur(checkXNPassword);
 
-// function SubmitForm() {
-//   if (checkUser() == false || checkPassword() == false || checkPasswordx() == false || checkEmail() == false) {
-//    alert('Bạn chưa nhập đầy đủ thông tin!');
-//   }
-//   else {
-//     var tt1 = document.getElementById('checkUser').value;
-//     var tt2 = document.getElementById('checkEmail').value;
-//     var w = open("formvalidation_info.html", "Ketqua");
-//     w.document.write("<b>THÔNG TIN ĐĂNG NHẬP</b");
-//      w.document.write("Tài Khoản: " + tt1 + "<br>");
-//      w.document.write("Email: " + tt2 + "<br>");
+  // check email address
+  function checkEmail() {
+    let mauKT =   /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if ($('#txtEmail').val() == "") {
+        $('#tbMail').html('Không để trống');
+        return false;
+    }
+    if (!mauKT.test($('#txtEmail').val())) {
+      $('#tbMail').html('Nhập email theo đinh dạng your@example.com');
+      return true;
+  }
+    $('#tbMail').html('');
+    return true;
+  }
+  $('#txtEmail').blur(checkEmail);
 
-//   }
-// }
+  // checkSDT
+  function checkSDT() {
+    var mauKT = /^0\d{3}-\d{3}-\d{3}$/;
+    if ($('#txtSDT').val() == "") {
+        $('#tbSDT').html('Không để trống');
+        return false;
+    }
+    if (!mauKT.test($('#txtSDT').val())) {
+        $('#tbSDT').html('Theo dạng 0xxx-xxx-xxx trong đó x là số');
+        return truw;
+    }
+    $('#tbSDT').html('');
+    return true;
+  }
+  $('#txtSDT').blur(checkSDT);
+
+  //check dk
+  $('#btn-login').click(function () {
+    if (!checkUser() || !checkPassword() || !checkXNPassword() || ! checkEmail() || !checkSDT()) {
+      $('#thongbao').html('Vui lòng nhập đầy đủ thông tin');
+    }
+    var user = $('#txtUser').val();
+    var email = $('#txtEmail').val();
+    var sdt = $('#txtSDT').val();
+    var them = "<br><br>" + "Username: " + user + "<br><br>"+ "Email: " + email + "<br><br>" + "Phone: " + sdt + "<br><br>";
+    $('#info').append(them);
+    $('.login-container').css('display', 'none');
+    $('#info').css('display', 'block');
+    return true;
+  })
+})
